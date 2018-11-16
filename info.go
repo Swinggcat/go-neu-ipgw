@@ -19,7 +19,7 @@ type IPGWInfo struct {
 }
 
 func randKey() string {
-	return string(rand.Intn(100001))
+	return strconv.Itoa(rand.Intn(100001))
 }
 
 func GetInfo() (*IPGWInfo, error) {
